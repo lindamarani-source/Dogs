@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #f55f5f;  
+  --secondary-color: #770a69; 
+  --text-primary: #000000;   
+}
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+ background-image:url("dogs.webpg");
+  backdrop-filter: blur(10px); 
+ background-size: cover;  
+     background-position: center; 
+     background-repeat: no-repeat;
+        height: 100vh;
+}

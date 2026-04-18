@@ -12,13 +12,13 @@ async function fetchData(){
         }
 
         const data = await response.json();
-        console.log(data);
+        const image = data.message;
+        const imgElement = document.getElementById("image");
 
-        const image = document.getElementById('image');
-        image.src = data.message;
-        image.alt = dogBreed;
-    } catch (error) {
+        imgElement.src = image;
+        imgElement.style.display = "block";
+     }
+     catch (error) {
         console.error(error);
-        alert('Unable to fetch dog image. Please check the breed name and try again.');
-    }
+     }
 }
