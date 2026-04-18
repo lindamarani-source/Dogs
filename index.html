@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+ <html lang="en">
+         <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-    
-</head>
-<body>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="styles.css">
+         <script src="index.js"></script>
 
-    <input type="text" id="dogBreed" placeholder="Enter dog breed">
-    <button type="button" onclick="fetchData()">Fetch Dog Breed</button><br>
+         </head>
 
-    <img src="" alt="Dog Breeds" id="image">
+             <body id="index-page">
 
-</body>
+             <header>
+                 <img src="dogs.webpg" alt="Logotype" class="logo-image">
+                 <h1>Canine Encyclopedia</h1>  
+
+                 <nav>
+            <a href="home.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="comments.html">Comments</a>
+            <a href="why.html">Why us?</a>
+        </nav>
+
+             </header>
+
+              <div class="centre">
+                 <input type="text" id="dogBreed" placeholder="Enter dog breed"><br><br><br>
+                 <button type="button" onclick="fetchData()" class="button">Fetch Dog Breed</button><br><br><br>
+
+                 <img src="" alt="Dog Breeds" id="image">
+
+              </div>
+
+         <footer class="footer">
+             Copyright @2026 Canine Encyclopedia. All Rights Reserved.
+         </footer>
+      </body>
 </html>

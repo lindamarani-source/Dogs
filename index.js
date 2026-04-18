@@ -21,4 +21,5 @@ async function fetchData(){
      catch (error) {
         console.error(error);
      }
+
 }

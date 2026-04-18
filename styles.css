@@ -8,6 +8,7 @@ body {
   color: var(--text-primary);
   margin: 0;
   padding: 0;
+  background-color: bisque;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -15,19 +16,11 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: beige;
 }
 
-#index{
- background-image:url("dogs.webpg");
-}
-
-#index-page{
-    background-color: bisque;
-}
 
 header {
-    background: rgb(238, 238, 230);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     padding: 1rem 8%;
     display: flex;
@@ -52,16 +45,16 @@ header {
 
 .logo-image {
     height: 50px;
-    margin-left: 5px;
+    margin-left: 1px;
 }
 
 nav a {
     margin-left: 25px;
     text-decoration: none;
-    color: #333;  /* Changed to a dark gray for better visibility */
+    color: var(--slate);
     font-weight: 600;
     font-size: 0.95rem;
-    transition: all 0.3s ease;  /* Smooth transition for hover effects */
+    transition: var(--transition);
     position: relative;
 }
 
@@ -72,22 +65,27 @@ nav a::after {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: var(--primary-color);  
-    transition: width 0.3s ease;
+    background-color: var(--primary-red);
+    transition: var(--transition);
 }
 
 nav a:hover {
-    color: var(--primary-color); 
+    color: var(--primary-red);
 }
 
 nav a:hover::after {
-    width: 100%; 
+    width: 100%;
 }
 
+/* --- HERO SECTION --- */
 .hero {
-    background-size: cover;  
-    background-position: center; 
-    background-repeat: no-repeat; 
+  
+    min-height: 100vh;
+    
+    background-size: cover;   /* Scales image to cover entire area */
+    background-position: center; /* Centers image vertically and horizontally */
+    background-repeat: no-repeat; /* Prevents tiling if image is small */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,39 +98,19 @@ nav a:hover::after {
     padding: 100px 15% 0 15%; 
 }
 
-.hero h1 {
-    font-size: 3.8rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    animation: 0.8s ease-out;
-}
-
-.hero h1 em {
-    color:#ee7e7e ;
-    font-size: 200%;
-    font-style: normal;
-}
-
-.hero p {
-    font-size: 2.7rem;
-    margin-bottom: 30px;
-    opacity: 0.9;
-    max-width: 800px;
-    color: aliceblue;
-}
- 
 .button {
    background-color: #ee7e7e;
    color: beige;
-    padding: 16px 35px;
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 25px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: var(--transition);
     box-shadow: 0 4px 15px rgba(163, 29, 34, 0.3);
+    border: none;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -147,7 +125,6 @@ nav a:hover::after {
      text-align: center;
      padding-bottom: 2%;
      padding-top: 2%;
-     margin-top: auto;
 }
 
 .centre{
@@ -165,6 +142,7 @@ nav a:hover::after {
     background-color: #e9a5a5;
     color: beige;
     border-radius: 50px;
+    border: none;
 }
 
 input::placeholder {
@@ -178,66 +156,4 @@ input::placeholder {
      background-color: #e49c9c;
     color: beige;
     border-radius: 50px;
-}
-
-/* --- LEARN PAGE STYLES --- */
-.learn-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    line-height: 1.6;
-    color: var(--text-primary);
-}
-
-.learn-content h1 {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 40px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.learn-content section {
-    margin-bottom: 40px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.learn-content h2 {
-    font-size: 1.8rem;
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 5px;
-}
-
-.learn-content p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.learn-content ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.learn-content li {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-.learn-content strong {
-    color: var(--primary-color);
-    font-weight: 600;
-}
-
-.learn-content em {
-    font-style: italic;
-    color: #666;
 }
