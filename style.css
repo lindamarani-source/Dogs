@@ -1,6 +1,6 @@
 :root {
   --primary-color: #ee7e7e;  
-  --secondary-color: beige; 
+  --secondary-color:  #fce8e8; 
   --text-primary: #000000;   
 }
 body {
@@ -15,7 +15,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: beige;
+  background-color:  #fce8e8;
 }
 
 #index{
@@ -23,7 +23,7 @@ body {
 }
 
 #index-page{
-    background-color: bisque;
+    background-color:  #fce8e8;
 }
 
 header {
@@ -136,7 +136,7 @@ nav a:hover::after {
 }
 
 .button:hover {
-    background-color:beige;
+    background-color:#fce8e8;
     color: #ee7e7e;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px pink;
